@@ -1,0 +1,145 @@
+/*Tipografía - Font*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+
+/*font-family: "Cormorant Garamond", serif*/
+
+
+/*Borrado de márgenes en general*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*Encabezado*/
+header {
+    /*Color de todo el encabezado*/
+    background-color: whitesmoke;
+
+    /*Quiero que sea Flex solo el Div*/
+    div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    nav {
+        align-items: center;
+        width: 60%
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+        list-style: none;
+        align-items: center;
+        width: 100%;
+        height: 100%
+    }
+
+    ul a {
+        text-decoration: none;
+        font-style: normal;
+        color: rgb(32, 99, 32);
+
+    }
+}
+/*Cuerpo*/
+/*seccion de bienvenidos con imágen de fondo*/
+.bienvenido {
+    background-image: url(../Medios/fondoprincipal.jpg);
+    height: 100px;
+    width: 100%;
+    background-size: auto;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: "Cormorant Garamond", serif
+}
+
+/*Acerca del blog*/
+.infoblog {
+    background-color: rgb(186, 245, 175);
+    padding: 2em;
+    h2 {
+        padding-bottom: 1em;
+        font-family: "Cormorant Garamond", serif;
+        text-align: center;
+    }
+/*Texto e imagen de bienvenida*/
+.bienvenidos {
+        display: flex;
+        justify-content:center;
+        gap: 5em;
+        p {
+            font-family: "Cormorant Garamond", serif;
+            font-weight: 500;
+            text-align:left;
+            text-align: justify;
+            width: 100%;
+            height: auto;
+            font-size: 20px;
+    }
+    img{
+        width: 300Px;
+        height: 300px;  
+        }
+    }
+    }
+
+
+main{
+    color: rgb(162, 194, 162);
+}
+
+li {
+    text-decoration: solid;
+}
+
+.comedor {
+    width: 1000px;
+}
+
+.habitacion {
+    width: 700px;
+}
+
+.jardin {
+    width: 1000px;
+}
+
+
+
+/* pie de pagina*/
+footer {
+    background-color: rgb(187, 248, 187);
+    .ig {
+        height: 50px;
+    }
+
+    .whatsapp {
+        height: 50px;
+    }
+
+    .facebook {
+        height: 50px;
+    }
+/*Formulario*/
+.formulario{
+    padding: 2em;
+    line-height: 200%;
+    background-color: rgb(186, 245, 175);
+    list-style-type: none;  
+}    
+}
