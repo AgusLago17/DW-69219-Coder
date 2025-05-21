@@ -16,7 +16,9 @@
 header {
     /*Color de todo el encabezado*/
     background-color: whitesmoke;
-
+    position: sticky;
+    top: 0;
+    width: 100%;
     /*Quiero que sea Flex solo el Div*/
     div {
         display: flex;
@@ -46,10 +48,9 @@ header {
         text-decoration: none;
         font-style: normal;
         color: rgb(32, 99, 32);
-
     }
 }
-/*Cuerpo*/
+/*Cuerpo del Index*/
 /*seccion de bienvenidos con imágen de fondo*/
 .bienvenido {
     background-image: url(../Medios/fondoprincipal.jpg);
@@ -100,24 +101,60 @@ header {
 
 
 main{
-    color: rgb(162, 194, 162);
+    color: rgb(43, 70, 43);
 }
 
 li {
     text-decoration: solid;
 }
 
-.comedor {
-    width: 1000px;
+/*Últimas novedades*/
+.contenedor-grid img{
+width: 90%;
+height: 100%;
+}
+.contenedor-grid {
+    display: grid;
+    grid-template-areas:
+    "titulo titulo titulo"
+    "comedor habitacion pileta"
+    "texto1 texto2 texto3";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 500px 150px;
+    gap: 5px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: justify;
+}
+.grid-titulo{
+    grid-area: titulo
+}
+.grid-texto1{
+    grid-area: texto1;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.grid-texto2{
+    grid-area:texto2;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.grid-texto3{
+    grid-area: texto3;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.grid-comedor{
+    grid-area:comedor
+}
+.grid-habitacion{
+    grid-area: habitacion
+}
+.grid-jardin{
+    grid-area: pileta
 }
 
-.habitacion {
-    width: 700px;
-}
-
-.jardin {
-    width: 1000px;
-}
 
 
 
@@ -143,3 +180,67 @@ footer {
     list-style-type: none;  
 }    
 }
+
+
+/*Diseño del HTML: Plantas de Interior*/
+.card-group {
+margin: 10px; 
+gap: 20px;  
+text-align: justify; 
+img {
+max-width: 50%;
+height: 50%;
+}   
+}
+
+.bannerplantasinterior {
+  background-image: url(../Medios/bannerinspointerior.jpg);
+  text-align: center;
+  margin: 10px;
+}
+
+/*MediaQ*/
+@media (max-width: 480px) {
+    header{
+        div{
+           display: flex;
+           flex-direction: row;
+           justify-content: center;
+        }
+    ul{ display: table ;
+        margin-top: 30px;
+}
+    }
+     img.logo {
+        width: 120px; 
+    }
+
+    .infoblog {
+        img {
+            display: none;
+        }
+    }
+    
+.bienvenido {
+width: 100vw;
+} 
+
+.contenedor-grid {
+     display: grid;
+    grid-template-areas:
+    "titulo"
+    "comedor"
+    "texto1"
+    "habitacion"
+    "texto2"
+    "pileta"
+    "texto3";
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 500px 150px 500px 150px 500px 150px;
+    gap: 5px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+  } 
+    
