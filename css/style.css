@@ -199,6 +199,128 @@ height: 50%;
   margin: 10px;
 }
 
+/*Diseño del HTML: Plantas de Exterior*/
+.bannerplantasexterior {
+ background-image: url(../Medios/bannerexterior.jpg);
+  text-align: center;
+  height: 100px;
+  width: auto;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  }
+.gridplantasexterior {
+    img {
+    width: auto;
+    height: 200px;
+    }
+    display: grid;
+    grid-template-areas:
+    "nombre1 geranio descripcion1"
+    "nombre2 jazmin descripcion2"
+    "nombre3 lavanda descripcion3"
+    "nombre4 hortensia descripcion4"
+    "nombre5 rosa descripcion5"
+    "nombre6 margarita descripcion6";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: justify;
+    padding: 5px;
+}  
+.nombre1{
+    grid-area: nombre1;
+}
+.nombre2{
+    grid-area: nombre2;
+}
+.nombre3{
+    grid-area: nombre3;
+}
+.nombre4{
+    grid-area: nombre4;
+}
+.nombre5{
+    grid-area: nombre5;
+}
+.nombre6{
+    grid-area: nombre6;
+}
+.geranio{
+    grid-area: geranio;
+}
+.rosa{
+    grid-area: rosa;
+}
+.margarita{
+    grid-area: margarita;
+}
+.lavanda{
+    grid-area: lavanda;
+}
+.hortensia{
+    grid-area: hortensia;
+}
+.jazmin{
+    grid-area: jazmin;
+}
+.descripcion1{
+    grid-area: descripcion1;
+}
+.descripcion2{
+    grid-area: descripcion2;
+}
+.descripcion3{
+    grid-area: descripcion3;
+}
+.descripcion4{
+    grid-area: descripcion4;
+}
+.descripcion5{
+    grid-area: descripcion5;
+}
+.descripcion6{
+    grid-area: descripcion6;
+}
+
+/*Estilo de pestaña de inspiracion*/
+
+.primercarrusel {
+    display: flex;
+    justify-content: flex-start;
+    img{
+        width: auto;
+        max-width: 300px;
+        height: 300px;
+        object-fit: cover
+    }
+
+}
+.inspiracion {
+    display: flex;
+    justify-content: center;
+}
+.segundocarrusel {
+ display: flex;
+    justify-content: flex-start;
+    img{
+        width: auto;
+        max-width: 300px;
+        height: 300px;
+        object-fit: cover
+    }  
+}
+.carruseles {
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+
+}
+
+
 /*MediaQ*/
 @media (max-width: 480px) {
     header{
